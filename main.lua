@@ -38,7 +38,7 @@ local Settings: SettingsType = {
 	ObservForTime = 60; -- Every how many (s) will the fires in the time fraction reset
 	SuspiciousCallRate = 60; -- How many calls in the time ObservForTime are suspcious
 
-	WebhookLinked = "https://discord.com/api/webhooks/1264532936498348042/c0omPyg-3MWEq-PdeA45sq2CLX66hz6bt3fnYVF1LFqmJtcq4DdgyucaX7zaugS6dCrV";
+	WebhookLinked = "YOUR-WEBHOOK";
 }
 
 local DEBUG = true
