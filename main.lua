@@ -11,13 +11,6 @@ require asset id 18626279464 for the updated version!
 ]]-- 
 
 -- [[ TYPES ]] -- 
-export type ListenerInfo = {
-	ServerListening: boolean;
-	ClientListening: boolean;
-	Initialized: boolean;
-}
-
--- SETTINGS
 export type SettingsType = {
 	ObservForTime: number;
 	SuspiciousCallRate: number?; -- Seconds
@@ -41,17 +34,9 @@ local Settings: SettingsType = {
 	WebhookLinked = "YOUR-WEBHOOK";
 }
 
-local DEBUG = true
+local DEBUG = true -- Prints
 
 -- [[ MODULE STARTS FROM HERE ]] --
-
-local ListeningInfo: ListenerInfo = 
-	{
-		ServerListening = false, 
-		ClientListening = false, 
-		Initialized = false
-	}
-
 -- SERVICES
 local RunService = game:GetService("RunService")
 local HttpService = game:GetService("HttpService")
